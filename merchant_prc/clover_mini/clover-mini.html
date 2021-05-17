@@ -31,9 +31,9 @@
 											id="YourBusinessName" name="YourBusinessName">
 									</div>
 									<div class="form-holder form-holder-2">
-										<label for="username">Year Business Started</label>
-										<input type="number" placeholder="YYYY" class="form-control"
-											id="YearBusinessStarted" name="YearBusinessStarted">
+										<label for="username">Years of Operation</label>
+										<input type="number" placeholder="Number of Years" class="form-control"
+											id="YearsOfOperation" name="YearsOfOperation">
 									</div>
 								</div>
 								<div class="form-row">
@@ -84,6 +84,12 @@
 										<input type="text" placeholder="Business/Corporate Name" class="form-control"
 											id="BusinessCorporateName" name="BusinessCorporateName">
 									</div>
+		
+										<div class="form-holder form-holder-2">
+											<label for="card-type">Merchant Website (URL)</label>
+											<input type="text" placeholder="Merchant Website (URL)" class="form-control"
+												id="MerchantWebSite" name="MerchantWebSite">
+										</div>
 								</div>
 
 								<div class="form-row">
@@ -121,6 +127,25 @@
 										<input type="text" placeholder="Zip" class="form-control" id="Zip" name="Zip">
 									</div>
 								</div>
+								<div class="form-row form-row-2">
+									<div class="form-holder">
+										<label for="month">Telephone Number</label>
+
+										<input type="text" placeholder="BusinessPhone" class="form-control"
+											id="BusinessPhone" name="BusinessPhone">
+									</div>
+									<div class="form-holder">
+										<label for="month">Fax Number</label>
+
+										<input type="text" placeholder="Fax Number" class="form-control" id="FaxNumber"
+											name="FaxNumber">
+									</div>
+									<div class="form-holder">
+										<label for="year">Taxpayer Identifaction</label>
+										<input type="text" placeholder="Federal Tax ID" class="form-control"
+											id="FederalTaxID" name="FederalTaxID">
+									</div>
+								</div>
 								<!-- Billing Address : V --->
 								<div class="form-row">
 									<div class="form-holder form-holder-4">
@@ -132,39 +157,22 @@
 										<div class="form-holder">
 											<label for="month">Billing City</label>
 
-											<input type="text" placeholder="Billing City" class="form-control" id="BillingCity"
-												name="BillingCity">
+											<input type="text" placeholder="Billing City" class="form-control"
+												id="BillingCity" name="BillingCity">
 										</div>
 										<div class="form-holder">
 											<label for="year">Billing State</label>
-											<input type="text" placeholder="Billing State" class="form-control" id="BillingState"
-												name="BillingState">
+											<input type="text" placeholder="Billing State" class="form-control"
+												id="BillingState" name="BillingState">
 										</div>
 										<div class="form-holder">
 											<label for="year">Billing Zip</label>
-											<input type="text" placeholder="Billing Zip" class="form-control" id="BillingZip"
-												name="BillingZip">
+											<input type="text" placeholder="Billing Zip" class="form-control"
+												id="BillingZip" name="BillingZip">
 										</div>
 									</div>
-
 								</div>
 								<!-- /Billing Address : V  --->
-								<div class="form-row form-row-2">
-									<div class="form-holder">
-										<label for="month">Business Phone</label>
-
-										<input type="text" placeholder="BusinessPhone" class="form-control"
-											id="BusinessPhone" name="BusinessPhone">
-									</div>
-									<div class="form-holder">
-										<label for="year">Federal Tax ID</label>
-										<input type="text" placeholder="Federal Tax ID" class="form-control"
-											id="FederalTaxID" name="FederalTaxID">
-									</div>
-								</div>
-
-
-
 							</div>
 						</section>
 						<!-- SECTION 3 -->
@@ -250,8 +258,14 @@
 			</div>
 		</div>
 	</div>
-	<script src='https://raw.githubusercontent.com/schooleventtickets/school-event-tickets-development/main/MERCHANT-FORMS/wp-content/merchant_prc/clover_mini/js/validate.js?token=AUAUE5H7JM3EN7YITP67XF3AULKKC'></script>
-	<script src='https://raw.githubusercontent.com/schooleventtickets/school-event-tickets-development/main/MERCHANT-FORMS/wp-content/merchant_prc/clover_mini/js/jquery-3.3.1.min.js?token=AUAUE5BPEL5GZW34EUCVG7TAULJ2A'></script>
-	<script src='https://raw.githubusercontent.com/schooleventtickets/school-event-tickets-development/main/MERCHANT-FORMS/wp-content/merchant_prc/clover_mini/js/jquery.steps.js?token=AUAUE5AN6ZNO73HEKKTC3HTAULKCC'></script>
-	<script src='https://raw.githubusercontent.com/schooleventtickets/school-event-tickets-development/main/MERCHANT-FORMS/wp-content/merchant_prc/clover_mini/js/additional.js?token=AUAUE5EPQ76I7OBUEEZLBDDAULKFE'></script>
-	<script src='https://raw.githubusercontent.com/schooleventtickets/school-event-tickets-development/main/MERCHANT-FORMS/wp-content/merchant_prc/clover_mini/js/main.js?token=AUAUE5ALR77ARP2GCVNDGXDAULKGM></script>
+	<script src='https://cdn.jsdelivr.net/gh/schooleventtickets/wp-content@latest/merchant_prc/clover_mini/js/additional.js'></script>
+	<script src='https://cdn.jsdelivr.net/gh/schooleventtickets/wp-content@latest/merchant_prc/clover_mini/js/jquery-3.3.1.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/gh/schooleventtickets/wp-content@latest/merchant_prc/clover_mini/js/jquery.steps.js'></script>
+	<script src='https://cdn.jsdelivr.net/gh/schooleventtickets/wp-content@latest/merchant_prc/clover_mini/js/main.js'></script>
+	<script src='https://cdn.jsdelivr.net/gh/schooleventtickets/wp-content@latest/merchant_prc/clover_mini/js/validate.js'></script>
+
+	<!-- <script src='../clover_mini/js/additional.js'></script>
+	<script src='../clover_mini/js/jquery-3.3.1.min.js'></script>
+	<script src='../clover_mini/js/jquery.steps.js'></script>
+	<script src='../clover_mini/js/main.js'></script>
+	<script src='../clover_mini/js/validate.js'></script> -->
