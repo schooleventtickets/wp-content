@@ -1,0 +1,257 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- Font-->
+<link rel="stylesheet" type="text/css"
+	href="https://lenderall.com/wp-content/merchant_prc/clover_mini/css/raleway-font.css">
+<link rel="stylesheet" type="text/css"
+	href="https://lenderall.com/wp-content/merchant_prc/clover_mini/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+<!-- Jquery -->
+<link rel="stylesheet" href="https://lenderall.com/wp-content/merchant_prc/clover_mini/css/downloaded.css">
+<!-- Main Style Css -->
+<link rel="stylesheet" href="https://lenderall.com/wp-content/merchant_prc/clover_mini/css/style.css" />
+</head>
+
+<body>
+	<div class="page-content">
+		<div class="wizard-v1-content">
+			<div class="wizard-form">
+				<form class="form-register" id="form-register" action="#" method="post">
+					<div id="form-total">
+						<!-- SECTION 1 -->
+						<h2>
+							<span class="step-icon"><i class="zmdi zmdi-account"></i></span>
+							<span class="step-number">Step 1</span>
+							<span class="step-text">Get Started</span>
+						</h2>
+						<section>
+							<div class="inner">
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="YourBusinessName">Business Legal Name</label>
+										<input type="text" placeholder="Your Business Name" class="form-control"
+											id="YourBusinessName" name="YourBusinessName">
+									</div>
+									<div class="form-holder form-holder-2">
+										<label for="username">Year Business Started</label>
+										<input type="number" placeholder="YYYY" class="form-control"
+											id="YearBusinessStarted" name="YearBusinessStarted">
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-4">
+										<label for="email">Business Email</label>
+										<input type="email" placeholder="example@email.com" class="form-control"
+											id="BusinessEmail" name="BusinessEmail" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<label for="month">Average Ticket</label>
+
+										<input type="text" placeholder="Average Ticket" class="form-control"
+											id="AverageTicket" name="AverageTicket">
+									</div>
+									<div class="form-holder">
+										<label for="year">High Ticket</label>
+										<input type="text" placeholder="High Ticket" class="form-control"
+											id="HighTicket" name="HighTicket">
+									</div>
+									<div class="form-holder">
+										<label for="year">Average Monthly Volume</label>
+										<input type="text" placeholder="Avg Monthly Volume" class="form-control"
+											id="AverageMonthlyVolume" name="AverageMonthlyVolume">
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- SECTION 2 -->
+						<h2>
+							<span class="step-icon"><i class="zmdi zmdi-card"></i></span>
+							<span class="step-number">Step 2</span>
+							<span class="step-text">Business Infomation</span>
+						</h2>
+						<section>
+							<div class="inner">
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="card-type">DBA (Doing Business As) Name</label>
+										<input type="text" placeholder="DBA (Doing Business As) Name"
+											class="form-control" id="DBAName" name="DBAName">
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="card-type">Business/Corporate Name</label>
+										<input type="text" placeholder="Business/Corporate Name" class="form-control"
+											id="BusinessCorporateName" name="BusinessCorporateName">
+									</div>
+								</div>
+
+								<div class="form-row">
+									<div class="form-holder form-holder-4">
+										<label for="card-number">Merchant Type</label>
+										<select name="MerchantType" id="MerchantType" class="form-control">
+											<option value="" selected disabled>Type of business</option>
+											<option value="SoleProprietor">Sole Proprietor</option>
+											<option value="Partnership">Partnership</option>
+											<option value="LLC">LLC</option>
+											<option value="Corporation">Corporation</option>
+											<option value="NonProfit">Non Profit</option>
+										</select>
+									</div>
+									<div class="form-holder form-holder-4">
+										<label for="cvc">Location Address</label>
+										<input type="text" placeholder="Location Address" class="form-control"
+											id="LocationAddress" name="LocationAddress">
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<label for="month">City</label>
+
+										<input type="text" placeholder="City" class="form-control" id="City"
+											name="City">
+									</div>
+									<div class="form-holder">
+										<label for="year">State</label>
+										<input type="text" placeholder="State" class="form-control" id="State"
+											name="State">
+									</div>
+									<div class="form-holder">
+										<label for="year">Zip</label>
+										<input type="text" placeholder="Zip" class="form-control" id="Zip" name="Zip">
+									</div>
+								</div>
+								<!-- Billing Address : V --->
+								<div class="form-row">
+									<div class="form-holder form-holder-4">
+										<label for="cvc">Billing Address</label>
+										<input type="text" placeholder="Billing Address" class="form-control"
+											id="BillingAddress" name="BillingAddress">
+									</div>
+									<div class="form-row">
+										<div class="form-holder">
+											<label for="month">Billing City</label>
+
+											<input type="text" placeholder="Billing City" class="form-control" id="BillingCity"
+												name="BillingCity">
+										</div>
+										<div class="form-holder">
+											<label for="year">Billing State</label>
+											<input type="text" placeholder="Billing State" class="form-control" id="BillingState"
+												name="BillingState">
+										</div>
+										<div class="form-holder">
+											<label for="year">Billing Zip</label>
+											<input type="text" placeholder="Billing Zip" class="form-control" id="BillingZip"
+												name="BillingZip">
+										</div>
+									</div>
+
+								</div>
+								<!-- /Billing Address : V  --->
+								<div class="form-row form-row-2">
+									<div class="form-holder">
+										<label for="month">Business Phone</label>
+
+										<input type="text" placeholder="BusinessPhone" class="form-control"
+											id="BusinessPhone" name="BusinessPhone">
+									</div>
+									<div class="form-holder">
+										<label for="year">Federal Tax ID</label>
+										<input type="text" placeholder="Federal Tax ID" class="form-control"
+											id="FederalTaxID" name="FederalTaxID">
+									</div>
+								</div>
+
+
+
+							</div>
+						</section>
+						<!-- SECTION 3 -->
+						<h2>
+							<span class="step-icon"><i class="zmdi zmdi-receipt"></i></span>
+							<span class="step-number">Step 3</span>
+							<span class="step-text">Owners Information</span>
+						</h2>
+						<section>
+							<div class="inner">
+
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="card-type">Owner Name</label>
+										<input type="text" placeholder="Owner Name" class="form-control" id="OwnerName"
+											name="OwnerName">
+									</div>
+								</div>
+								<div class="form-row form-row2">
+									<div class="form-holder form-holder-4">
+										<label for="card-type">Owner Cell Phone</label>
+										<input type="text" placeholder="Owner Phone" class="form-control"
+											id="OwnerPhone" name="OwnerPhone">
+									</div>
+									<div class="form-holder">
+										<label for="month">Title</label>
+
+										<input type="text" placeholder="Title" class="form-control" id="OwnerTitle"
+											name="OwnerTitle">
+									</div>
+								</div>
+								<div class="form-row">
+
+									<div class="form-holder">
+										<label for="year">Applicant's SSN#</label>
+										<input type="text" placeholder="SSN" class="form-control" id="ApplicantSSN"
+											name="ApplicantSSN">
+									</div>
+									<div class="form-holder">
+										<label for="year">Owner DOB</label>
+										<input type="date" class="form-control" id="DOB" name="DOB">
+									</div>
+								</div>
+
+								<div class="form-row">
+									<div class="form-holder">
+										<label for="month">Owner Home Address</label>
+
+										<input type="text" placeholder="Address" class="form-control" id="OwnerAddress"
+											name="OwnerAddress">
+									</div>
+									<div class="form-holder">
+										<label for="year">Owner City</label>
+										<input type="text" placeholder="Owner City" class="form-control" id="OwnerCity"
+											name="OwnerCity">
+									</div>
+
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<label for="month">Owner State</label>
+
+										<input type="text" placeholder="Owner State" class="form-control"
+											id="OwnerState" name="OwnerState">
+									</div>
+									<div class="form-holder">
+										<label for="year">Owner Zip</label>
+										<input type="text" placeholder="Owner Zip" class="form-control" id="OwnerZip"
+											name="OwnerZip">
+									</div>
+
+								</div>
+								<!--<div class="form-row">
+									<button class="form-control" onClick="sign()">GO FOR SIGNATURE</button>
+									
+                                    
+								</div>-->
+
+							</div>
+						</section>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src='https://raw.githubusercontent.com/schooleventtickets/school-event-tickets-development/main/MERCHANT-FORMS/wp-content/merchant_prc/clover_mini/js/validate.js?token=AUAUE5H7JM3EN7YITP67XF3AULKKC'></script>
+	<script src='https://raw.githubusercontent.com/schooleventtickets/school-event-tickets-development/main/MERCHANT-FORMS/wp-content/merchant_prc/clover_mini/js/jquery-3.3.1.min.js?token=AUAUE5BPEL5GZW34EUCVG7TAULJ2A'></script>
+	<script src='https://raw.githubusercontent.com/schooleventtickets/school-event-tickets-development/main/MERCHANT-FORMS/wp-content/merchant_prc/clover_mini/js/jquery.steps.js?token=AUAUE5AN6ZNO73HEKKTC3HTAULKCC'></script>
+	<script src='https://raw.githubusercontent.com/schooleventtickets/school-event-tickets-development/main/MERCHANT-FORMS/wp-content/merchant_prc/clover_mini/js/additional.js?token=AUAUE5EPQ76I7OBUEEZLBDDAULKFE'></script>
+	<script src='https://raw.githubusercontent.com/schooleventtickets/school-event-tickets-development/main/MERCHANT-FORMS/wp-content/merchant_prc/clover_mini/js/main.js?token=AUAUE5ALR77ARP2GCVNDGXDAULKGM></script>
