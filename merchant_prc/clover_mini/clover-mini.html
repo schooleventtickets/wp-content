@@ -84,12 +84,12 @@
 										<input type="text" placeholder="Business/Corporate Name" class="form-control"
 											id="BusinessCorporateName" name="BusinessCorporateName">
 									</div>
-		
-										<div class="form-holder form-holder-2">
-											<label for="card-type">Merchant Website (URL)</label>
-											<input type="text" placeholder="Merchant Website (URL)" class="form-control"
-												id="MerchantWebSite" name="MerchantWebSite">
-										</div>
+
+									<div class="form-holder form-holder-2">
+										<label for="card-type">Merchant Website (URL)</label>
+										<input type="text" placeholder="Merchant Website (URL)" class="form-control"
+											id="MerchantWebSite" name="MerchantWebSite">
+									</div>
 								</div>
 
 								<div class="form-row">
@@ -104,13 +104,23 @@
 											<option value="NonProfit">Non Profit</option>
 										</select>
 									</div>
+									<div class="form-holder">
+										<label for="year">Federal Tax ID</label>
+										<input type="text" placeholder="Federal Tax ID" class="form-control"
+											id="FederalTaxID" name="FederalTaxID">
+									</div>
+									<div class="form-holder">
+										<label for="year">Business Phone Number</label>
+										<input type="text" placeholder="Business Phone Number" class="form-control"
+											id="BusinessPhone" name="BusinessPhone">
+									</div>
+								</div>
+								<div class="form-row">
 									<div class="form-holder form-holder-4">
 										<label for="cvc">Location Address</label>
 										<input type="text" placeholder="Location Address" class="form-control"
 											id="LocationAddress" name="LocationAddress">
 									</div>
-								</div>
-								<div class="form-row">
 									<div class="form-holder">
 										<label for="month">City</label>
 
@@ -128,23 +138,6 @@
 									</div>
 								</div>
 								<div class="form-row form-row-2">
-									<div class="form-holder">
-										<label for="month">Telephone Number</label>
-
-										<input type="text" placeholder="BusinessPhone" class="form-control"
-											id="BusinessPhone" name="BusinessPhone">
-									</div>
-									<div class="form-holder">
-										<label for="month">Fax Number</label>
-
-										<input type="text" placeholder="Fax Number" class="form-control" id="FaxNumber"
-											name="FaxNumber">
-									</div>
-									<div class="form-holder">
-										<label for="year">Taxpayer Identifaction</label>
-										<input type="text" placeholder="Federal Tax ID" class="form-control"
-											id="FederalTaxID" name="FederalTaxID">
-									</div>
 								</div>
 								<!-- Billing Address : V --->
 								<div class="form-row">
@@ -172,7 +165,24 @@
 										</div>
 									</div>
 								</div>
-								<!-- /Billing Address : V  --->
+								<!-- Banking info -->
+								<div class="form-row">
+									<div class="form-holder">
+										<label for="year">Name On Bank Account</label>
+										<input type="text" placeholder="Name On Bank Account" class="form-control"
+											id="NameOnBankAccount" name="NameOnBankAccount">
+									</div>
+									<div class="form-holder">
+										<label for="year">Transit (ABA) Routing Number</label>
+										<input type="text" placeholder="Transit (ABA) Routing Number"
+											class="form-control" id="RoutingNumber" name="RoutingNumber">
+									</div>
+									<div class="form-holder">
+										<label for="year">Account Number</label>
+										<input type="text" placeholder="Account Number" class="form-control"
+											id="AccountNumber" name="AccountNumber">
+									</div>
+								</div>
 							</div>
 						</section>
 						<!-- SECTION 3 -->
@@ -186,9 +196,14 @@
 
 								<div class="form-row">
 									<div class="form-holder form-holder-2">
-										<label for="card-type">Owner Name</label>
-										<input type="text" placeholder="Owner Name" class="form-control" id="OwnerName"
-											name="OwnerName">
+										<label for="card-type">Owner First Name</label>
+										<input type="text" placeholder="Owner First Name" class="form-control" id="OwnerFirstName"
+											name="OwnerFirstName">
+									</div>
+									<div class="form-holder form-holder-2">
+										<label for="card-type">Owner Last Name</label>
+										<input type="text" placeholder="Owner Last Name" class="form-control" id="OwnerLastName"
+											name="OwnerLastName">
 									</div>
 								</div>
 								<div class="form-row form-row2">
@@ -263,8 +278,8 @@
 	<script src='https://cdn.jsdelivr.net/gh/schooleventtickets/wp-content@latest/merchant_prc/clover_mini/js/jquery.steps.js'></script>
 	<script src='https://cdn.jsdelivr.net/gh/schooleventtickets/wp-content@latest/merchant_prc/clover_mini/js/main.js'></script>
 	<script src='https://cdn.jsdelivr.net/gh/schooleventtickets/wp-content@latest/merchant_prc/clover_mini/js/validate.js'></script>
-
-	<!-- <script src='../clover_mini/js/additional.js'></script>
+<!-- 
+	<script src='../clover_mini/js/additional.js'></script>
 	<script src='../clover_mini/js/jquery-3.3.1.min.js'></script>
 	<script src='../clover_mini/js/jquery.steps.js'></script>
 	<script src='../clover_mini/js/main.js'></script>
