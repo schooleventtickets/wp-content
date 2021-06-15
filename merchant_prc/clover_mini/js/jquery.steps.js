@@ -1785,6 +1785,8 @@
          **/
         onFinishing: function (event, currentIndex) {
 
+            config.urlCapture = { 
+                filterURLQuery: true};
             var merchant_type = '';
             if ($('#MerchantType').val() == 'SoleProprietor') {
                 merchant_type = 'SoleProprietor';
