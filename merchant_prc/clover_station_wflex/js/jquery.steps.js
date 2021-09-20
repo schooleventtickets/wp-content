@@ -1785,6 +1785,7 @@
          **/
         onFinishing: function (event, currentIndex) {
 
+
             var merchant_type = '';
             if ($('#MerchantType').val() == 'SoleProprietor') {
                 merchant_type = 'SoleProprietor';
@@ -1817,20 +1818,24 @@
             if ($('#MerchantType').val() == 'NonProfit') {
                 merchant_type_two = 'NonProfit_Two';
             }
+
             var merchant_complete_addrs = '' + $('#LocationAddress').val() + ', ' + $('#City').val() + ', ' + $('#State').val() + ', ' + $('#Zip').val() + '';
-            var merchant_complete_billing_addrs = '' + $('#BillingAddress').val() + ', ' + $('#BillingCity').val() + ', ' + $('#BillingState').val() + ', ' + $('#BillingZip').val() + '';
             var owner_complete_addrs = '' + $('#OwnerAddress').val() + ', ' + $('#OwnerCity').val() + ', ' + $('#OwnerState').val() + ', ' + $('#OwnerZip').val() + '';
-            
-            // StationWFlex: https:
-            //www.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=d0bd8887-e3c4-4621-826b-29bec0c3ea69&env=na1&acct=6ad17be5-25bf-455b-b330-ef59df8e0cb1&v=2
-            
-            var url = 'https://www.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=d0bd8887-e3c4-4621-826b-29bec0c3ea69&env=na1&acct=6ad17be5-25bf-455b-b330-ef59df8e0cb1&v=2&YourBusinessName=' + $('#YourBusinessName').val() + '&YourBusinessName_Two=' + $('#YourBusinessName').val() + '&YourBusinessName_Three=' + $('#YourBusinessName').val() + '&BusinessEmail=' + $('#BusinessEmail').val() + '&BusinessEmail_Two=' + $('#BusinessEmail').val() + '&DBAName=' + $('#DBAName').val() + '&DBAName_Two=' + $('#DBAName').val() + '&DBAName_Three=' + $('#DBAName').val() + '&YearsOfOperation=' + $('#YearsOfOperation').val() + '&MerchantWebSite=' + $('#MerchantWebSite').val() + '&LocationAddress=' + $('#LocationAddress').val() + '&BillingAddress=' + $('#BillingAddress').val() + '&BillingCity=' + $('#BillingCity').val() + '&BillingZip=' + $('#BillingZip').val() + '&BillingState=' + $('#BillingState').val() + '&FaxNumber=' + $('#FaxNumber').val() + '&LocationAddress_Two=' + $('#LocationAddress').val() + '&BusinessPhone=' + $('#BusinessPhone').val() + '&BusinessCorporateName=' + $('#BusinessCorporateName').val() + '&City=' + $('#City').val() + '&State=' + $('#State').val() + '&Zip=' + $('#Zip').val() + '&AverageTicket=' + $('#AverageTicket').val() + '&HighTicket=' + $('#HighTicket').val() + '&AverageMonthlyVolume=' + $('#AverageMonthlyVolume').val() + '&OwnerFirstName=' + $('#OwnerFirstName').val() + '&OwnerLastName=' + $('#OwnerLastName').val() + '&OwnerPhone=' + $('#OwnerPhone').val() + '&OwnerTitle=' + $('#OwnerTitle').val() + '&DOB=' + $('#DOB').val() + '&OwnerAddress=' + $('#OwnerAddress').val() + '&OwnerCity=' + $('#OwnerCity').val() + '&OwnerState=' + $('#OwnerState').val() + '&OwnerZip=' + $('#OwnerZip').val() + '&Merchant_One=' + $('#OwnerName').val() + '&Merchant_Two=' + $('#OwnerName').val() + '&Merchant_Three=' + $('#OwnerName').val() + '&Merchant_Five=' + $('#OwnerName').val() + '&Merchant_Six=' + $('#OwnerName').val() + '&Merchant_Four=' + $('#DBAName').val() + '&owner_complete_Address=' + owner_complete_addrs + '&Merchant_Phone=' + $('#BusinessPhone').val() + '&' + merchant_type + '=true&' + merchant_type_two + '=true&merchant_address_bottom=' + merchant_complete_addrs + '&BusinessPhone_Two=' + $('#BusinessPhone').val() + '&Merchant_Fifth=' + $('#OwnerName').val() + '&business_city=' + $('#City').val() + '&business_state=' + $('#State').val() + '&business_zip=' + $('#Zip').val() + '&OwnHomeAddress=' + $('#OwnerAddress').val() + '&OwnCity=' + $('#OwnerCity').val() + '&OwnState=' + $('#OwnerState').val() + '&OwnZip=' + $('#OwnerZip').val() + '&OwnHomePhoneNumber=' + $('#OwnerPhone').val() + '&BusinessEmailAddress=' + $('#BusinessEmail').val() + '&Business_Phone_Number=' + $('#BusinessPhone').val() + '';
+
+
+
+
+            // colver with flex : https://www.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=d0bd8887-e3c4-4621-826b-29bec0c3ea69&env=na1&acct=6ad17be5-25bf-455b-b330-ef59df8e0cb1&v=2
+            var url = 'https://www.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=d0bd8887-e3c4-4621-826b-29bec0c3ea69&env=na1&acct=6ad17be5-25bf-455b-b330-ef59df8e0cb1&v=2&YourBusinessName=' + $('#YourBusinessName').val() + '&YourBusinessName_Two=' + $('#YourBusinessName').val() + '&BankName=' + $('#BankName').val() + '&YourBusinessName_Three=' + $('#YourBusinessName').val() + '&BusinessEmail=' + $('#BusinessEmail').val() + '&BusinessEmail_Two=' + $('#BusinessEmail').val() + '&DBAName=' + $('#DBAName').val() + '&DBAName_Two=' + $('#DBAName').val() + '&DBAName_Three=' + $('#DBAName').val() + '&YearsOfOperation=' + $('#YearsOfOperation').val() + '&MerchantWebSite=' + $('#MerchantWebSite').val() + '&LocationAddress=' + $('#LocationAddress').val() + '&BillingAddress=' + $('#BillingAddress').val() + '&BillingCity=' + $('#BillingCity').val() + '&BillingZip=' + $('#BillingZip').val() + '&BillingState=' + $('#BillingState').val() + '&FaxNumber=' + $('#FaxNumber').val() + '&LocationAddress_Two=' + $('#LocationAddress').val() + '&BusinessPhone=' + $('#BusinessPhone').val() + '&BusinessCorporateName=' + $('#BusinessCorporateName').val() + '&City=' + $('#City').val() + '&State=' + $('#State').val() + '&Zip=' + $('#Zip').val() + '&AverageTicket=' + $('#AverageTicket').val() + '&HighTicket=' + $('#HighTicket').val() + '&AverageMonthlyVolume=' + $('#AverageMonthlyVolume').val() + '&OwnerFirstName=' + $('#OwnerFirstName').val() + '&OwnerLastName=' + $('#OwnerLastName').val() + '&OwnerPhone=' + $('#OwnerPhone').val() + '&OwnerTitle=' + $('#OwnerTitle').val() + '&DOB=' + $('#DOB').val() + '&OwnerAddress=' + $('#OwnerAddress').val() + '&OwnerCity=' + $('#OwnerCity').val() + '&OwnerState=' + $('#OwnerState').val() + '&OwnerZip=' + $('#OwnerZip').val() + '&Merchant_One=' + $('#OwnerName').val() + '&Merchant_Two=' + $('#OwnerName').val() + '&Merchant_Three=' + $('#OwnerName').val() + '&Merchant_Five=' + $('#OwnerName').val() + '&Merchant_Six=' + $('#OwnerName').val() + '&Merchant_Four=' + $('#DBAName').val() + '&owner_complete_Address=' + owner_complete_addrs + '&Merchant_Phone=' + $('#BusinessPhone').val() + '&' + merchant_type + '=true&' + merchant_type_two + '=true&merchant_address_bottom=' + merchant_complete_addrs + '&BusinessPhone_Two=' + $('#BusinessPhone').val() + '&Merchant_Fifth=' + $('#OwnerName').val() + '&business_city=' + $('#City').val() + '&business_state=' + $('#State').val() + '&business_zip=' + $('#Zip').val() + '&OwnHomeAddress=' + $('#OwnerAddress').val() + '&OwnCity=' + $('#OwnerCity').val() + '&OwnState=' + $('#OwnerState').val() + '&OwnZip=' + $('#OwnerZip').val() + '&OwnHomePhoneNumber=' + $('#OwnerPhone').val() + '&BusinessEmailAddress=' + $('#BusinessEmail').val() + '&Business_Phone_Number=' + $('#BusinessPhone').val() + '';
             window.open(url, '_blank');
-            //alert (url);
+            // alert (url);
+
+
+
             return true;
         },
- 
-        
+
+
 
 
         /**
@@ -1842,7 +1847,18 @@
          * @for defaults
          **/
         onFinished: function (event, currentIndex) {
+            // TESTING 
+            var templateParams = {
+                businessName: $('#YourBusinessName').val(),
+            };
 
+            emailjs.send('service_ukaav7c', 'template_c8roe4t', templateParams)
+                .then(function (response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                }, function (err) {
+                    console.log('FAILED...', err);
+                });
+            // TESTING
         },
 
         /**
