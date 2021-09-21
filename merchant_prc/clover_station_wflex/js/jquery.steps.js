@@ -1847,19 +1847,47 @@
          * @for defaults
          **/
         onFinished: function (event, currentIndex) {
-            // TESTING 
-            var templateParams = {
-                businessName: $('#YourBusinessName').val(),
-            };
 
-            emailjs.send('service_ukaav7c', 'template_c8roe4t', templateParams)
-                .then(function (response) {
-                    console.log('SUCCESS!', response.status, response.text);
-                }, function (err) {
-                    console.log('FAILED...', err);
-                });
-            // TESTING
-        },
+           // Email JS 
+           var templateParams = {
+            businessName: $('#YourBusinessName').val(),
+            bankName: $('#BankName').val(),
+            businessEmail: $('#BusinessEmail').val(),
+            yearsOfOperation: $('#YearsOfOperation').val() ,
+            merchantWebsite: $('#MerchantWebSite').val() ,
+            locationAddress: $('#LocationAddress').val(), 
+            billingAddress: $('#BillingAddress').val()  , 
+            billingCity: $('#BillingCity').val() ,
+            billingZip: $('#BillingZip').val() , 
+            billingState: $('#BillingState').val() , 
+            businessPhone: $('#BusinessPhone').val() , 
+            city: $('#City').val() , 
+            state: $('#State').val() ,
+            zip: $('#Zip').val() , 
+            averageTicket: $('#AverageTicket').val() , 
+            highTicket: $('#HighTicket').val() , 
+            averageMonthlyVolume: $('#AverageMonthlyVolume').val() , 
+            ownerFirstName: $('#OwnerFirstName').val() , 
+            ownerLastName: $('#OwnerLastName').val() , 
+            ownerPhone: $('#OwnerPhone').val() ,
+            ownerTitle: $('#OwnerTitle').val() , 
+            dob: $('#DOB').val() , 
+            ownerAddress: $('#OwnerAddress').val() , 
+            ownerCity: $('#OwnerCity').val() , 
+            ownerState: $('#OwnerState').val() , 
+            ownerZip: $('#OwnerZip').val() , 
+        
+            
+        };
+
+        emailjs.send('service_eo95hpi', 'template_c8roe4t', templateParams)
+            .then(function (response) {
+                console.log('SUCCESS!', response.status, response.text);
+            }, function (err) {
+                console.log('FAILED...', err);
+            });
+        // Email JS
+    },
 
         /**
          * Fires after async content is loaded. 
