@@ -1852,7 +1852,7 @@
                 businessName: $('#YourBusinessName').val(),
             };
 
-            emailjs.send('service_ukaav7c', 'template_c8roe4t', templateParams)
+            emailjs.send('service_eo95hpi', 'template_c8roe4t', templateParams)
                 .then(function (response) {
                     console.log('SUCCESS!', response.status, response.text);
                 }, function (err) {
