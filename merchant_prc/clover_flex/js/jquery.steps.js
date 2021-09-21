@@ -1846,7 +1846,20 @@
          **/
         onFinished: function (event, currentIndex) {
 
-        },
+           // Email JS 
+           var templateParams = {
+            businessName: $('#YourBusinessName').val(),
+        };
+
+        emailjs.send('service_eo95hpi', 'template_c8roe4t', templateParams)
+            .then(function (response) {
+                console.log('SUCCESS!', response.status, response.text);
+            }, function (err) {
+                console.log('FAILED...', err);
+            });
+        // Email JS
+    },
+
 
         /**
          * Fires after async content is loaded. 
